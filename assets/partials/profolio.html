@@ -1,0 +1,42 @@
+<div class="view">
+
+	<div id="feature" class="row">
+		<div class="data col-md-8">
+			<img src="{{feature.feature_image}}">
+		 </div>
+		 <div class="image col-md-4">
+			<h1>{{feature.title}}</h1>
+			{{feature.feature_message}} 
+
+			<div class="readmore-btn text-center">
+				<a href="/#/profolio/{{feature.id}}">
+					<p>
+						Read More
+					</p>
+				</a>
+			</div>
+		</div>
+
+	</div>
+	<div class="row thumbnail-container" >
+		<div style="margin-top: 10px;" class="flip-container col-md-4 col-sm-6" ng-repeat="project in profolio">
+			<div class="flipper">
+				<div class="front">
+					<img src="{{project.thumbnail}}">
+				</div>
+				<div class="back">
+					<h3>{{project.title}}</h3>
+					{{project.message}}
+					<div class="readmore-btn text-center">
+						<a href="/#/profolio/{{project.id}}">
+							<p>
+								Read More
+							</p>
+						</a>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+	
+</div>

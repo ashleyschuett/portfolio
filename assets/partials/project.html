@@ -1,0 +1,29 @@
+<div class="view ind_project">
+	<div ng-show="project.link">Website: <a class="web_link" href="{{project.link}}">{{project.title}}</a></div>
+	<div id="project-feature">
+		<div class="device-mockup" data-device="imac" data-orientation="portrait" data-color="black">
+		    <div class="device">
+		        <div class="screen">
+		            <img src="{{project.feature_image}}"/>
+		        </div>
+		        <div class="button">
+		            <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+		        </div>
+		    </div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="summary col-md-10 col-md-push-1 end">
+			<h3>{{project.title}}</h3>
+			<p>{{project.feature_message}}</p>
+		</div>
+	</div>
+	<div class="row details" ng-repeat="detail in project.details">
+		<div class="col-sm-8 col-sm-offset-1">
+			<img src="{{detail.image}}" />
+		</div>
+		<div class="col-sm-2 explination end">
+			{{detail.note}}
+		</div>
+	</div>
+</div>

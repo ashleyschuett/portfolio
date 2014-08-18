@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" xmlns:ng="http://angularjs.org" ng-app="app" id="ng-app">
+	<head>
+		<meta charset="UTF-8">
+         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta name="viewport" content="width=device-width, user-scalable=no">
+         <title>Ashley Schuett</title>
+         <link rel="shortcut icon" href="assets/css/favicon.ico"/>
+	</head>
+<body ng-controller="MainController">
+
+<div id="header-container">
+	<div id="header" class="row">
+		<div id="title">
+			 <a ng-click="active()" href="/"><img src="assets/css/logo2.svg" /></a> 
+		</div>
+		<div id="menu-item">
+      		<a id="page_profolio" ng-click="active()" href="/#/profolio">Profolio</a>
+			<a id="page_resume" ng-click="active()" href="/#/resume">Resume</a>
+			<a id="page_about-me" ng-click="active()" href="/#/about-me">About Me</a>
+		</div>
+		<div id="social-media">
+			<a href="https://twitter.com/victimnvillain"><i class="fa fa-twitter fa-2x"></i></a>
+			<a href="https://github.com/schuetta92"><i class="fa fa-github fa-2x"></i></a>
+			<a href="http://www.linkedin.com/pub/ashley-schuett/60/7ab/b9b"><i class="fa fa-linkedin-square fa-2x"></i></a> 
+		</div>
+	</div>
+</div>
+
+<div id="container">
+	<div id="background-placement" ng-view>
+
+	</div>
+</div>
+
+<div style="position: fixed; opacity: 0;" id="mobile-menu">
+	<div class="row text-center">
+		<div class="col-xs-4 item-one">
+			<a href="/#/profolio">
+				<i class="fa fa-th-large"></i><br>
+				Profolio
+			</a>
+		</div>
+		<div class="col-xs-4 item-two">
+			<a href="/#/resume">
+				<i class="fa fa-file-o"></i><br>
+				Resume
+			</a>
+		</div>
+		<div class="col-xs-4 item-three">
+			<a href="/#/about-me">
+				<i class="fa fa-user"></i><br>
+				About Me
+			</a>
+		</div>
+
+	</div>
+</div>
+
+  <link rel="stylesheet" type="text/css" href='assets/css/custom.css'>
+  <link rel="stylesheet" type="text/css" href='bower_components/bootstrap/dist/css/bootstrap.min.css'>
+  <link rel="stylesheet" type="text/css" href='bower_components/fontawesome/css/font-awesome.min.css'>
+
+  <link rel="stylesheet" type="text/css" href="device-mockups/device-mockups2.css" />
+  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Jacques+Francois' rel='stylesheet' type='text/css'>
+
+  <script async src='bower_components/jquery/dist/jquery.min.js'></script>
+  <script src='bower_components/angular/angular.min.js'></script>
+  <script src='bower_components/angular-route/angular-route.min.js'></script>
+  <script src='bower_components/angular-resource/angular-resource.min.js'></script>
+  <script async src="bower_components/modernizr/modernizr.js"></script>
+
+  <!-- App angular files -->
+  <script src='assets/js/app.js'></script>
+  <script src='assets/js/controller.js'></script>
+
+  <!-- Google -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-53851299-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+  </body>
+
+</html>

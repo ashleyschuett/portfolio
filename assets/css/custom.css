@@ -1,0 +1,506 @@
+/* website styling*/
+img{
+	border-radius: 5px;
+}
+
+h1, h2, h3, h4, h5, h6, a, div h1, div a, a p, div h3, span.highlight{
+	font-family:'Quicksand', sans-serif !important;
+}
+
+div, span, p{
+	font-family: 'Jacques Francois', serif;
+}
+
+span.highlight{
+	font-size: 125%;
+}
+
+a{
+	color: #3F91EB;
+}
+
+a:hover, a.active{
+	color: #8b113f !important;
+}
+
+a:active{
+	color: white !important;
+}
+
+.row img{
+	max-width: 100%;
+}
+
+.view .row{
+	max-width: 100%;
+	margin: auto !important;
+}
+
+html, body{
+	height:100%;
+	max-width: 100%;
+	overflow-x: hidden; 
+}
+
+
+#background-placement{
+	background: url(/assets/img/bits_bytes.svg) no-repeat, url(/assets/img/bits_bytes-right.svg) no-repeat;
+	background-size: 493px 300px, 493px 300px;
+	background-position: left top, right bottom;
+	background-attachment: fixed;
+	min-height: 100%;
+
+}
+
+/* Header and footer */
+
+@media (max-width: 1400px){
+	#header-container #header{
+		width: 100% !important;	
+	}
+	#container .view{
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 500px){
+	#header-container #header #menu-item{
+		display: none;
+	}
+	#header-container #header #social-media{
+		top: 2px !important;
+		right: 7px;
+		font-size: 130%;
+	}
+
+	#mobile-menu{
+		opacity: 1 !important;
+		position: fixed !important;
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
+		background: #3F91EB;
+		font-size: 130%;
+		z-index: 1000;
+	}
+
+	#mobile-menu a{
+		color: #273447;
+	}
+
+	#mobile-menu a:hover 
+	{
+		text-decoration: none;
+	}
+
+	#mobile-menu .item-one, #mobile-menu .item-two{
+		border-right: 2px solid #273447;
+	}
+
+}
+
+#header-container{
+	width: 100%;
+	border-bottom: 1px solid #666;
+	background-color: whitesmoke;
+}
+
+}
+
+#header-container #header #menu-item
+{
+	margin-left: 65px;
+}
+
+#header-container #header #menu-item a{
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-bottom: 2px solid;
+	font-size: 130%;
+
+	position: relative;
+	top: 28px;
+
+	-webkit-transition: all .5s ease; /* Safari */
+    transition: all .5s ease;
+}
+
+#header-container #header #menu-item a:hover, #header-container #header #menu-item a.active{
+	border-bottom: 1px solid;
+	text-decoration: none;
+	top: 30px;
+}
+
+#header-container #header #social-media{
+	float: right;
+	position: relative;
+	top: -22px;
+	padding-right: 2px;
+}
+
+#header-container #header{
+	width: 80%;
+	margin: 0 auto;
+	max-width: 1600px;
+}
+
+#header-container #header img{
+	-webkit-transform: rotate(2deg);
+	float: left;
+}
+
+#header-container #header #divider {
+	font-size: 255%;
+	vertical-align: middle; 
+}
+
+/* Container Frame*/
+
+#container{
+	width: 100%;
+	display: inline;
+    margin: 0 auto -142px; 
+}
+
+#container .view{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 20px;
+	max-width: 1600px;
+}
+
+/* Home page*/
+.frontpage a:hover{
+	text-decoration: none;
+}
+
+
+.frontpage img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  border-radius: 0px 0px 0px 0px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 501px) { /* Specific to this particular image */
+  .frontpage img.bg {
+    /*left: 50%;
+    margin-left: -512px;*/   /* 50% */
+    /*position: absolute;*/
+    position: relative;
+    min-width: 100%;
+  }
+
+  .frontpage figure #greeting
+  {
+  	top: -455px !important;
+  }
+  .frontpage figure a
+  {
+  	top: -250px !important;
+  }
+}
+
+.frontpage figure .row{
+	margin-right: 0px !important;
+}
+
+.frontpage figure{
+	position: relative;
+}
+
+.frontpage #greeting
+{
+	position: absolute;
+	top: -590px;
+	color: #8b113f;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 20px 40px 40px rgba(255, 255, 255, 0.2);
+}
+
+.frontpage #greeting h1{
+	margin-bottom: 2px;
+	font-size: 450%;
+}
+
+.frontpage #greeting h3{
+	margin-top: 2px;
+}
+
+.frontpage figure a{
+	position: absolute;
+	top: -440px;
+}
+
+
+
+.frontpage a.flat-button{
+	width: 85%;
+	background: rgba(63, 145, 235, 0.8);
+	padding: 12px;
+}
+
+.frontpage a.flat-button p{
+	color: #273447;
+	text-align: center;
+	vertical-align: middle;
+	border-top: 2px solid;
+	font-size: 159%;
+	margin-bottom: 0px;
+	padding-bottom: 2px;
+
+	-webkit-transition-delay: .5s; /* Safari */
+    transition-delay: .5s;
+
+	-webkit-transition: all .5s ease; /* Safari */
+    transition: all .5s ease;
+}
+
+.frontpage a.flat-button p:before{
+	content: '';
+	position: absolute;
+	top: 20%;
+	height: 25%;
+	left: 12px;
+	border-left: 2px solid;
+
+	-webkit-transition: all .25s ease; /* Safari */
+    transition: all .25s ease;
+}
+
+.frontpage a.flat-button p:after{
+	content: '';
+	position: absolute;
+	top: 20%;
+	height: 25%;
+	right: 12px;
+	border-right: 2px solid;
+
+	-webkit-transition: all .25s ease; /* Safari */
+    transition: all .25s ease;
+}
+
+.frontpage a.flat-button:hover p:before, .frontpage a.flat-button:hover p:after{
+	height: 0%;
+}
+.frontpage a.flat-button:hover p{
+		border-top: 0px solid;
+		padding-top: 2px;
+	}
+
+.frontpage .front-info{
+	background: rgba(139, 17, 63, 0.2);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+@media (max-width: 500px){
+	.frontpage img.bg 
+	{
+	    position: relative;
+	    min-width: 100%;
+	  }
+	.frontpage a.flat-button{
+		display: none;
+	}
+	.frontpage figure div#greeting{
+		top: -400px !important;
+	}
+}
+/*resume page*/
+article{
+	background-color: #f1f1f1;
+	border: 1px solid #ddd;
+	margin: auto;
+	padding: 1% 1%;
+	-webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .1);
+	box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .1);
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	border-left: 1px solid #ddd;
+	max-width: 100%;
+	margin-bottom: 25px;
+}
+
+
+
+#resume img{
+	margin: auto;
+	display: block;
+	max-width: 100%;
+}
+
+
+#pdf_resume{
+	margin: auto;
+}
+#pdf_resume a{
+	margin-left: -2%;
+}
+
+
+/* 
+
+	styling for page of projects
+
+*/
+
+a.web_link
+{
+	font-size: 125%;
+}
+
+.readmore-btn
+{
+
+}
+
+.readmore-btn a:hover
+{
+	text-decoration: none;
+}
+
+#feature img{
+	border: 1px solid #aaa;
+}
+
+.readmore-btn a p
+{
+	min-width: 33%;
+	max-width: 50%;
+	margin: auto;
+	margin-top: 30px;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#feature{
+	padding-bottom: 10px;
+}
+
+.thumbnail-container{
+	padding: 25px;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	height: 220px;
+}
+
+.flip-container .front img{
+	max-height: 100%;
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: middle !important;
+	height: 100%;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	padding: 10px;
+	position: absolute;
+	border-radius: 5px;
+	border: 1px solid #aaa;
+	background-color: white;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	box-shadow: 3px 3px 5px whitesmoke;
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+	width: 100%;
+	max-width: 100%;
+	background-color: whitesmoke;
+}
+
+
+/*******************************
+	END STYLING FOR PROJECTS
+*/
+
+/* Project page, for individuale project */
+
+#project-feature
+{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+
+#project-feature .device .screen img{
+	max-width: 100%;
+	height: 100%;
+	border-radius: 0px !important;
+}
+
+.ind_project .summary h3
+{
+	color: #3F91EB;
+	margin-top: 0px;
+}
+
+.ind_project .summary
+{
+	padding: 20px;
+	margin: 20px 0;
+	border: 1px solid #aaa;
+	border-left-width: 5px;
+	border-left-color: #3F91EB; 
+	border-radius: 3px;
+
+}
+
+.ind_project .details img{
+	border: 1px solid #aaa;
+	padding-bottom: 5px;
+}
+
+.ind_project .details .explination
+{
+	border-left: 5px solid #3f91eb;
+	border-radius: 3px;
+}
+
+/* ABOUT ME PAGE */
+
+#aboutme{
+	width: 50%;
+	min-width: 300px;
+	margin: auto;
+}
