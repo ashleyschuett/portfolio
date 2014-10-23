@@ -345,7 +345,9 @@ article{
 
 
 #pdf_resume{
-	margin: auto;
+	max-width: 900px;
+    margin: auto;
+    padding-bottom: 50px;
 }
 #pdf_resume a{
 	margin-left: -2%;
