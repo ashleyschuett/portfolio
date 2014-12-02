@@ -89,8 +89,8 @@ function get_data(){
 			            	"note": "Here people can look at all the events that have been created."
 			            },
 			            {
-			            	"image": "assets/img/swiper/swiper_event.png",
-			            	"note": "This is how a user would add a new event that they need to track students for."
+			            	"image": "assets/img/swiper/swiper_permissions.png",
+			            	"note": "This view allows the admin to look over all the users, and the areas they are associated with."
 			            },
 			            {
 			            	"image": "assets/img/swiper/swiper_feedback.png",
