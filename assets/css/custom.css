@@ -42,15 +42,15 @@ html, body{
 	overflow-x: hidden; 
 }
 
+/*I don't think I like these anymore*/
+/*#background-placement{*/
+	/*background: url(/assets/img/bits_bytes.svg) no-repeat, url(/assets/img/bits_bytes-right.svg) no-repeat;*/
+	/*background-size: 493px 300px, 493px 300px;*/
+	/*background-position: left top, right bottom;*/
+	/*background-attachment: fixed;*/
+	/*min-height: 100%;*/
 
-#background-placement{
-	background: url(/assets/img/bits_bytes.svg) no-repeat, url(/assets/img/bits_bytes-right.svg) no-repeat;
-	background-size: 493px 300px, 493px 300px;
-	background-position: left top, right bottom;
-	background-attachment: fixed;
-	min-height: 100%;
-
-}
+/*}*/
 
 /* Header and footer */
 
@@ -319,31 +319,6 @@ html, body{
 	}
 }
 /*resume page*/
-article{
-	background-color: #f1f1f1;
-	border: 1px solid #ddd;
-	margin: auto;
-	padding: 1% 1%;
-	-webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .1);
-	-moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .1);
-	box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, .1);
-	border-top: 1px solid #ddd;
-	border-right: 1px solid #bbb;
-	border-bottom: 1px solid #bbb;
-	border-left: 1px solid #ddd;
-	max-width: 100%;
-	margin-bottom: 25px;
-}
-
-
-
-#resume img{
-	margin: auto;
-	display: block;
-	max-width: 100%;
-}
-
-
 #pdf_resume{
 	max-width: 900px;
     margin: auto;
@@ -435,6 +410,9 @@ a.web_link
 	background-color: white;
 	top: 0;
 	left: 0;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
 }
 
 /* front pane, placed above back */
@@ -446,8 +424,6 @@ a.web_link
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
-	width: 100%;
-	max-width: 100%;
 	background-color: whitesmoke;
 }
 
